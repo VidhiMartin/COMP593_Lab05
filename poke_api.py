@@ -22,7 +22,7 @@ def print_pokemon_info(pokemon_info):
     abilities = ', '.join(a['ability']['name'] for a in pokemon_info.get('abilities', []))
 
 
-    print(f'Name: {name}\nID: {id}\nType: {type}\nAbilities: {abilities}')
+    print(f"Name: {name}\nID: {id}\nType: {type}\nAbilities: {abilities}")
 
 
 
@@ -48,6 +48,7 @@ def get_pokemon_info(pokemon_name):
     print(f'Request failed: {response.status_code} ({response.reason})')
 
     return
+    #Last step
 
 if __name__ == '__main__':
     main()
