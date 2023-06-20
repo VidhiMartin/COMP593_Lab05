@@ -53,9 +53,9 @@ def get_paste_data(pokemon_info):
 
 
     body_text = '\n'.join(ability['ability']['name'] for ability in abilities)
-
-
     return (title, body_text)
+    #last step
 
 if __name__ == '__main__':
     main()
+    #completed!
